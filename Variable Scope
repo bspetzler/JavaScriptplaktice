@@ -1,8 +1,8 @@
 What is scope? Your explanation should include the idea of global vs. block scope.
-Scope dictates in what space the variable is accessible. Global scope means the variable is assesible everywhere, and can be seen by all functions and other files that declare that global variable are loaded. Block scope lets the variable be accessed only within the function it is declared.
+Scope dictates in what space the variable is accessible. Global scope means the variable is assesible everywhere. A global variable can be seen by all functions and other files, that declare that global variable, that are loaded after it. Block scope lets the variable be accessed only within the function it is declared.
 
 Why are global variables avoided?
-Since they can be accessed by other functions, conflicts can arise when a variable of the same name is declared or used in another program. It can also create functions that are not deterministic, which means can yeild different results based on things that happen outside the function.
+Since they can be accessed by all functions, conflicts can arise when a variable of the same name is declared or used in multiple functions. It can also create functions that are not deterministic, which means they can can yeild different results based on things that happen outside the function.
 
 Explain JavaScript's strict mode
 Strict mode doesn't let you declare a variable without using 'let' or 'const.'
